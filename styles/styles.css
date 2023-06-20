@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
+    background-color: #FAD182;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #42BA82;
+    position: fixed;
+    z-index: 3;
+}
+
+header .logo img {
+    width: 56px;
+    height: 56px;
+    float: left;
+    padding: auto;
+    margin: 1px;
+}
+
+nav {
+    float: right;
+    margin: 0 25px;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 50px;
+    float: left;
+    padding: 16px 0;
+    position: relative;
+    font-family: 'Titan One', cursive;
+    font-weight: 5px;
+} 
+
+nav ul li a {
+    text-decoration: none;
+    color:black;
+    font-weight: 5px;
+}
+
+nav ul li a::before {
+    display: block;
+    content: '';
+    width: 0;
+    background-color: #FAD182;
+    position: absolute;
+    top: 0;
+    height: 5px;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+.pres {
+    margin: 60px 32px;
+    display: inline-block;
+    /*border-color: black;
+    border-style: solid;
+    border-width: 2px;*/ 
+    position: relative;
+    width: 1280px;
+    height: 680px;
+}
+
+
+#img1 {
+    max-width:max-content ;
+    width: 1280px;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+
+}
+
+#img2 {
+    width: 300px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 2;
+    right: 90px;
+    bottom: 100px;
+}
+
+#img3 {
+    width: 300px;
+    position: absolute;
+    z-index: 2;
+    left: 90px;
+    bottom: 150px;
+}
+
+#img4 {
+    width: 120px;
+    position: absolute;
+    z-index: 2;
+    left:58%;
+    top: 20%;
+}
+
+h1 {
+    display: inline-block;
+    left: 25%;
+    top: 20%;
+    position: absolute;
+    z-index: 2;
+    font-family: 'Titan One', cursive;
+    font-weight:100;
+    font-size:100px;
+}
+
+#title {
+    display: inline-block;
+    left: 67%;
+    top: 20%;
+    position: absolute;
+    z-index: 2;
+    font-family:'Titan One', cursive;
+    font-weight:100;
+    font-size:100px;
+}
+
+
+/*ul {
+    list-style: none;
+    direction: row;
+    justify-content: end;
+    align-items: center;
+}*/
